@@ -1,0 +1,108 @@
+dbms,TABLE_SCHEMA,TABLE_NAME,COLUMN_NAME,ORDINAL_POSITION,DATA_TYPE,CHARACTER_MAXIMUM_LENGTH,CONSTRAINT_TYPE,REFERENCED_TABLE_SCHEMA,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
+mysql,vietnamoperations,aircraft_root_info,valid_aircraft_root,2,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,weapon_type,2,varchar,30,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,mil_service,3,varchar,6,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,aircraft_root,4,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,source_id,5,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,id,6,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,msn_date,7,date,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,source_record,8,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,takeoff_location,9,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,tgtlatdd_ddd_wgs84,10,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,tgtlonddd_ddd_wgs84,11,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,tgt_type,12,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,num_weapons_delivered,13,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,time_on_target,14,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,weapon_type_class,15,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,aircraft_original,16,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,call_sign,17,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,flt_hours,18,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,mfunc,19,varchar,50,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,mfunc_desc,20,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,mission_id,21,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,num_of_acft,22,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,operation_supported,23,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,period_of_day,24,char,1,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,id_info,thor_data_viet_id,1,int,NULL,PRIMARY KEY,NULL,NULL,NULL
+mysql,vietnamoperations,id_info,id,2,int,NULL,PRIMARY KEY,NULL,NULL,NULL
+mysql,vietnamoperations,military_service_country,mil_service,1,varchar,6,PRIMARY KEY,NULL,NULL,NULL
+mysql,vietnamoperations,military_service_country_info,thor_data_viet_id,1,int,NULL,PRIMARY KEY,NULL,NULL,NULL
+mysql,vietnamoperations,military_service_country_info,mil_service,2,varchar,6,PRIMARY KEY,NULL,NULL,NULL
+mysql,vietnamoperations,source_info,thor_data_viet_id,1,int,NULL,PRIMARY KEY,NULL,NULL,NULL
+mysql,vietnamoperations,source_info,source_id,2,int,NULL,PRIMARY KEY,NULL,NULL,NULL
+mysql,vietnamoperations,weapon_info,thor_data_viet_id,1,int,NULL,PRIMARY KEY,NULL,NULL,NULL
+mysql,vietnamoperations,weapon_info,weapon_type,2,varchar,30,PRIMARY KEY,NULL,NULL,NULL
+mysql,voterdata,district_information,voter_reg_num,1,varchar,30,PRIMARY KEY,NULL,NULL,NULL
+mysql,voterdata,district_information,pct_portion,2,varchar,10,PRIMARY KEY,NULL,NULL,NULL
+mysql,voterdata,district_information,voter_reg_num,1,varchar,30,FOREIGN KEY,voterdata,registration_information,voter_reg_num
+mysql,vietnamoperations,base_bombing_info,unit,25,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,tgt_cloud_cover,26,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,tgt_country,27,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,tgt_orig_coords,28,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,tgt_orig_coords_format,29,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,tgt_weather,30,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,additional_info,31,text,65535,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,geozone,32,char,2,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,mfunc_desc_class,33,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,num_weapons_jettisoned,34,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,num_weapons_returned,35,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,base_bombing_info,weapons_loaded_weight,36,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,id_info,airforce_group,3,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,id_info,airforce_sqdn,4,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,id_info,release_flt_speed,5,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,id_info,resultsbda,6,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,id_info,time_off_target,7,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,military_service_country,country_flying_mission,2,varchar,30,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,military_service_country_info,country_flying_mission,3,varchar,30,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,source_info,call_sign,3,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,source_info,tgt_control,4,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,source_info,tgt_id,5,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,source_info,release_altitude,6,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,thor_data_viet_id,1,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,country_flying_mission,2,varchar,30,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,mil_service,3,varchar,6,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,msn_date,4,date,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,source_id,5,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,source_record,6,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,valid_aircraft_root,7,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,takeoff_location,8,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgtlatdd_ddd_wgs84,9,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgtlonddd_ddd_wgs84,10,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgt_type,11,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,num_weapons_delivered,12,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,time_on_target,13,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,weapon_type,14,varchar,30,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,weapon_type_class,15,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,weapon_type_weight,16,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,aircraft_original,17,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,aircraft_root,18,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,airforce_group,19,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,airforce_sqdn,20,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,call_sign,21,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,flt_hours,22,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,mfunc,23,varchar,50,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,mfunc_desc,24,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,mission_id,25,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,num_of_acft,26,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,operation_supported,27,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,period_of_day,28,char,1,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,unit,29,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgt_cloud_cover,30,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgt_control,31,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgt_country,32,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgt_id,33,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgt_orig_coords,34,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgt_orig_coords_format,35,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,tgt_weather,36,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,additional_info,37,text,65535,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,geozone,38,char,2,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,id,39,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,mfunc_desc_class,40,varchar,10,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,num_weapons_jettisoned,41,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,num_weapons_returned,42,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,release_altitude,43,smallint,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,release_flt_speed,44,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,resultsbda,45,varchar,20,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,time_off_target,46,decimal,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,vietnam_bombing_operations,weapons_loaded_weight,47,int,NULL,NULL,NULL,NULL,NULL
+mysql,vietnamoperations,weapon_info,weapon_type_weight,3,smallint,NULL,NULL,NULL,NULL,NULL
